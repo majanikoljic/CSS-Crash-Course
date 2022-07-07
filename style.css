@@ -1,0 +1,185 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    /* this will 0 everything out around the square and its called a reset
+
+}
+*/
+
+
+body{
+    background: color #f4f4f4;
+    color: #555555;
+
+    /* font-family: changes fonts in CSS */
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    font-weight: normal;
+    /* font-weight: change to fonts to bold to normal or any other design */
+
+    /* Same as above */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    /* line-height: changes the separation of the letters together */
+    line-height: 1.6em;
+    margin:0;
+    /* margin cuts the empty sides of the box */
+}
+a{
+    /* decoration gets rid of underline 
+    color changes from default blue to black */
+    text-decoration: none;
+    color: #000;
+
+}
+
+a:hover{
+    /* hover = when you go over each category it turns red */
+    color: red;
+}
+
+a:active{
+    /* active = flashes green when you click on it */
+    color: green;
+}
+
+/*
+a:visited{
+    /* they all tyrn balck because we visited all of them
+    color: black;
+}
+ -->
+
+/* class */
+.container{
+    /* width: its 500 pixels wide. If put in percents you can move it better to sides*/
+    width: 80%;
+    margin: auto;
+    /* margin: sets it in the middle and all sides*/
+}
+
+.button{
+    /* changes the button */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+
+}
+
+.button:hover{
+    /* made the buttons turn red when your on top of it */
+    background: red;
+    color: #fff;
+}
+
+.box-1{
+    background-color: #333;
+    color: #fff; 
+    /* #fff is white fonts and #333 is black box*/
+    /* border- ex down: size, color and style on the right */
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+
+    /* same as above */
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    border: 5px red solid;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    /* Same as above */
+    padding: 20px;
+
+    margin-top: 20px;
+    margin: 20px 0;
+
+}
+
+.box-1 h1{ 
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+    /* 
+    family= Tahoma font
+    style = italic
+    decoration = underline the title
+    transform = uppercase title 
+    spacing= space between each letter 
+    word spacing= more space between each word 
+    */
+
+}
+
+.box-2{
+    /* #ccc = light gray */
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    /* radius = curved edges
+    padding = 10 px all the way around */
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.categories h2{
+    /* puts the heading in the middle */
+    text-align:center; 
+}
+
+
+.categories ul{
+    /* the list style changes the bullet points from round to square 
+    or get rid of them by none*/
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    /* image = uses an image from a folder and puts the actual size of it  */
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+/* block puts labels in a new line and it goes all the way through the end */
+.my-form label{
+    display: block;
+}
+/* type = disregards the button because its not a text area and .my-form textarea mages the message a bigger box*/
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+
+}
+
+
+
